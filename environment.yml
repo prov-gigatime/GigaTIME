@@ -1,0 +1,100 @@
+name: gigatime_check_1
+
+channels:
+
+  - conda-forge
+
+dependencies:
+
+  - python=3.11
+
+  - pip
+ 
+
+  - pip:
+
+      # Core scientific stack
+
+      - numpy~=2.2
+
+      - pandas~=2.3
+
+      - scipy~=1.16
+
+      - scikit-learn~=1.5
+
+      - scikit-image~=0.25
+
+      - matplotlib~=3.9
+
+      - imageio~=2.34
+
+      - opencv-python-headless~=4.10
+
+      - pillow~=10.4
+
+      - pyyaml~=6.0
+
+      - requests~=2.32
+
+      - tqdm~=4.66
+
+      - anyio~=4.4
+
+      - tzdata~=2025.1
+
+      - networkx~=3.3
+
+      # Jupyter
+
+      - jupyterlab~=4.2
+
+      - ipykernel~=6.29
+
+      - ipywidgets~=8.1
+
+ 
+
+      # CV / augmentations
+
+      - albucore~=0.0
+
+      - albumentations~=1.4
+
+      - qudida~=0.0.4
+
+      - easydict~=1.13
+
+      - edict~=0.51
+
+ 
+
+      # Performance helpers
+
+      - simsimd~=6.5
+
+      - stringzilla~=4.0
+
+      - typing-inspection~=0.4
+
+ 
+
+      # PyTorch (pick ONE of the blocks below and keep only those lines)
+
+      # macOS / CPU (MPS on Apple Silicon works):
+
+      - torch~=2.4
+
+      - torchvision~=0.19
+
+ 
+
+      # Linux + NVIDIA CUDA example (uncomment & adjust cu121/cu124 as needed):
+
+      #- --extra-index-url https://download.pytorch.org/whl/cu124
+
+      # - torch==2.*+cu124
+
+      # - torchvision==0.*+cu124
+ 
+ 
