@@ -45,7 +45,7 @@ Make sure the extracted folder are located in `./data/`.
 
 ## Pre-trained Model
 
-Option 1: Load directly from Hugging Face (Recommended)
+Load directly from Hugging Face
 
 Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME) 
 
@@ -62,16 +62,6 @@ weights_path = hf_hub_download(
 # Load model
 state_dict = torch.load(weights_path, map_location='cpu')
 model.load_state_dict(state_dict)
-```
-
-Option 2: Manual download from Dropbox
-
-The pre-trained GigaTIME model can be downloaded [here](https://www.dropbox.com/scl/fi/phg4as7s8ayemwg64r27a/model.pth?rlkey=1n9skwtfduq2qdj6c6uor0myv&st=t209twfl&dl=0).
-
-After downloading, move the `model.pth` file to the `models` directory:
-
-```bash
-mv model.pth ./models/
 ```
 
 ## Tutorials
@@ -121,3 +111,14 @@ Any deployed use case of the model --- commercial or otherwise --- is out of sco
 
 The model is not intended or made available for clinical use as a medical device, clinical support, diagnostic tool, or other technology intended to be used in the diagnosis, cure, mitigation, treatment, or prevention of disease or other conditions. The model is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used as such. All users are responsible for reviewing the output of the developed model to determine whether the model meets the user’s needs and for validating and evaluating the model before any clinical use.
 
+## Citation
+
+```
+@article{valanarasu2025gigatime,
+  title={Multimodal AI generates virtual population for tumor microenvironment modeling},
+  author={Valanarasu, Jeya Maria Jose and Xu, Hanwen and Usuyama, Naoto and Kim, Chanwoo and Wong, Cliff and Argaw, Peniel and Ben Shimol, Racheli and Crabtree, Angela and Matlock, Kevin and Bartlett, Alexandra Q. and Bagga, Jaspreet and Gu, Yu and Zhang, Sheng and Naumann, Tristan and Fox, Bernard A. and Wright, Bill and Robicsek, Ari and Piening, Brian and Bifulco, Carlo and Wang, Sheng and Poon, Hoifung},
+  journal={Cell},
+  year={2025},
+  publisher={Cell Press}
+}
+```
