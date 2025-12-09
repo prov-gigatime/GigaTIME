@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/Paper-Cell-red.svg)](https://www.cell.com/)
-[![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://huggingface.co/prov-gigatime/GigaTIME)
+[![Paper](https://img.shields.io/badge/Paper-Cell-red.svg)](https://aka.ms/gigatime-paper)
+[![Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://aka.ms/gigatime-model)
 [![License](https://img.shields.io/badge/License-Research%20Only-blue.svg)](#license-notice)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
 [![Microsoft](https://img.shields.io/badge/Microsoft-Research-00A4EF.svg?logo=microsoft)](https://www.microsoft.com/en-us/research/)
@@ -11,7 +11,7 @@
 
 *Official implementation of GigaTIME*
 
-[📄 Paper](https://www.cell.com/) • [🤗 Model Card](https://huggingface.co/prov-gigatime/GigaTIME) 
+[📄 Paper](https://aka.ms/gigatime-paper) • [🤗 Model Card](https://aka.ms/gigatime-model) 
 
 </div>
 
