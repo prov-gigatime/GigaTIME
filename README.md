@@ -57,7 +57,7 @@ repo_id = "prov-gigatime/GigaTIME"
 local_dir = snapshot_download(repo_id=repo_id)
 
 weights_path = os.path.join(local_dir, "model.pth")
-state_dict = torch.load(weights_path)
+state_dict = torch.load(weights_path, map_location="cpu")
 model.load_state_dict(state_dict)
 ```
 
