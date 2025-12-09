@@ -403,7 +403,17 @@ def main():
     model = archs.__dict__[config['arch']](config['num_classes'],
                                             config['input_channels']).cuda()
 
-    model.load_state_dict(torch.load(config['output_dir'] + "models/"+config['name']+'/model.pth'))
+    # Load it using the huggingface model card
+    from huggingface_hub import snapshot_download
+
+    repo_id = "prov-gigatime/GigaTIME"
+
+    # Download the repo snapshot 
+    local_dir = snapshot_download(repo_id=repo_id)
+
+    weights_path = os.path.join(local_dir, "model.pth")
+    state_dict = torch.load(weights_path)
+    model.load_state_dict(state_dict)
     model = torch.nn.DataParallel(model)
     params = filter(lambda p: p.requires_grad, model.parameters())
     

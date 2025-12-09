@@ -50,17 +50,14 @@ Load directly from Hugging Face
 Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME) 
 
 ```python
-from huggingface_hub import hf_hub_download
+from huggingface_hub import snapshot_download
 import torch
 
-# Download model weights
-weights_path = hf_hub_download(
-    repo_id="prov-gigatime/GigaTIME",
-    filename="model.pth"  
-)
+repo_id = "prov-gigatime/GigaTIME"
+local_dir = snapshot_download(repo_id=repo_id)
 
-# Load model
-state_dict = torch.load(weights_path, map_location='cpu')
+weights_path = os.path.join(local_dir, "model.pth")
+state_dict = torch.load(weights_path)
 model.load_state_dict(state_dict)
 ```
 
