@@ -94,10 +94,10 @@ python scripts/db_train.py --arch gigatime   --tiling_dir "gigatime_training_pat
 ## Model Uses
 
 ### Intended Use
-The data, code, and model checkpoints are intended to be used solely for (I) future research on pathology foundation models and (II) reproducibility of the experimental results reported in the reference paper. The data, code, and model checkpoints are not intended to be used in clinical care or for any clinical decision-making purposes.
+The data, code, and model checkpoints are intended to be used solely for (I) future research on pathology AI models and (II) reproducibility of the experimental results reported in the reference paper. The data, code, and model checkpoints are not intended to be used in clinical care or for any clinical decision-making purposes.
 
 ### Primary Intended Use
-The primary intended use is to support AI researchers reproducing and building on top of this work. GigaTIME should be helpful for exploring pre-training, and encoding of digital pathology slides data.
+The primary intended use is to support AI researchers reproducing and building on top of this work. GigaTIME should be helpful for generating virtual mIF profiles from routine H&E pathology slides.
 
 ### Out-of-Scope Use
 Any deployed use case of the model --- commercial or otherwise --- is out of scope. Although we evaluated the models using a broad set of publicly-available research benchmarks, the models and evaluations are intended for research use only and not intended for deployed use cases.
