@@ -49,7 +49,7 @@ Load directly from Hugging Face
 
 Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME) 
 
-```
+```python
 from huggingface_hub import hf_hub_download
 import torch
 
@@ -68,31 +68,19 @@ model.load_state_dict(state_dict)
 
 - **Inference Tutorial:** 
 
-Learn how to load the model and run predictions on sample patches:
-
-
-    ```
-    scripts/gigatime_testing.ipynb
-    ```
-
+Learn how to load the model and run predictions on sample patches: [scripts/gigatime_testing.ipynb](scripts/gigatime_testing.ipynb)
 
 - **Training Tutorial:** 
 
-Understand the training workflow with a one-epoch demo:
-
-
-    ```
-    scripts/gigatime_training.ipynb
-    ```
+Understand the training workflow with a one-epoch demo: [scripts/gigatime_training.ipynb](scripts/gigatime_training.ipynb)
 
 ## Training GigaTIME cross-modal translator
-
 
 We also release the script needed to train the GigaTIME model here. 
 
 To train the model:
 
-```
+```bash
 python scripts/db_train.py --arch gigatime   --tiling_dir "gigatime_training_path"  --window_size 256       --batch_size 32     --sampling_prob 1     --name GigaTIME_model    --output_dir "Output_Directory"    --epoch 300 --input_h 512 --input_w 512 --lr 0.001 --loss BCEDiceLoss --val_sampling_prob 1 --num_workers 12 --gpu_ids 0 1 2 3 4 5 6 7 --crop True --metadata "Gigatime metadata file"
 ```
 
