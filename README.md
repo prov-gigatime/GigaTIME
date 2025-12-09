@@ -45,9 +45,19 @@ Make sure the extracted folder are located in `./data/`.
 
 ## Pre-trained Model
 
-Load directly from Hugging Face
-
 Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME) 
+
+You need to agree to the terms to access the models. Once you have the necessary access, set your HuggingFace read-only token as an environment variable:
+```
+export HF_TOKEN=<huggingface read-only token>
+```
+
+If you don’t set the token, you might encounter the following error:
+```
+ValueError: We have no connection or you passed local_files_only, so force_download is not an accepted option.
+```
+
+Once that is done, you can load your model like this:
 
 ```python
 from huggingface_hub import snapshot_download
