@@ -86,6 +86,7 @@ dependencies:
       - torch~=2.4
 
       - torchvision~=0.19
+      - huggingface_hub~=1.2.2 #need this one to download huggingface models.
 
  
 
