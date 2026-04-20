@@ -11,7 +11,7 @@
 
 *Official implementation of GigaTIME*
 
-[📄 Paper](https://aka.ms/gigatime-paper) • [🤗 Model Card](https://aka.ms/gigatime-model) 
+[📄 Paper](https://aka.ms/gigatime-paper) • [🤗 Model Card](https://aka.ms/gigatime-model) • [Azure AI Foundry](https://ai.azure.com/catalog/models/GigaTIME)
 
 </div>
 
@@ -45,7 +45,7 @@ Make sure the extracted folder are located in `./data/`.
 
 ## Pre-trained Model
 
-Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME) 
+Model card available in [HuggingFace](https://huggingface.co/prov-gigatime/GigaTIME). GigaTIME is also available in [Azure AI Foundry](https://ai.azure.com/catalog/models/GigaTIME).
 
 You need to agree to the terms to access the models. Once you have the necessary access, set your HuggingFace read-only token as an environment variable:
 ```
