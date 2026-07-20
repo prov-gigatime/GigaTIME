@@ -17,7 +17,7 @@
 
 ## ⚡ New: GigaTIME-Flash
 
-GigaTIME-Flash is built on top of GigaPath-Flash and delivers better prediction quality, 6× faster inference, and 8× less GPU memory than the original GigaTIME.
+GigaTIME-Flash is built on top of [GigaPath-Flash](https://github.com/prov-gigapath/prov-gigapath) and delivers better prediction quality, 6× faster inference, and 8× less GPU memory than the original GigaTIME.
 
 ➡️ **Model card:** [🤗 prov-gigatime/GigaTIME-flash](https://huggingface.co/prov-gigatime/GigaTIME-flash)
 
