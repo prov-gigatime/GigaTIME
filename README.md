@@ -23,6 +23,8 @@ GigaTIME-Flash is built on top of GigaPath-Flash and delivers better prediction 
 
 ➡️ **Try it:** [scripts/gigatime_flash_testing.ipynb](scripts/gigatime_flash_testing.ipynb)
 
+➡️ **Whole-slide inference:** tile a full TCGA slide, run GigaTIME-Flash, and stitch a slide-level virtual mIF map across all channels — [scripts/gigatime_flash_tcga_wsi_inference.ipynb](scripts/gigatime_flash_tcga_wsi_inference.ipynb)
+
 ## Environment Setup
 
 We recommend using Conda for environment management. The codebase has been tested with Python 3.11 using A100 GPUs for optimal reproducibility. Before creating the environment, ensure that the `torch` version specified in `environment.yml` matches your GPU and CUDA driver setup.
