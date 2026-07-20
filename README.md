@@ -15,6 +15,14 @@
 
 </div>
 
+## ⚡ New: GigaTIME-Flash
+
+GigaTIME-Flash is built on top of GigaPath-Flash and delivers better prediction quality, 6× faster inference, and 8× less GPU memory than the original GigaTIME.
+
+➡️ **Model card:** [🤗 prov-gigatime/GigaTIME-flash](https://huggingface.co/prov-gigatime/GigaTIME-flash)
+
+➡️ **Try it:** [scripts/gigatime_flash_testing.ipynb](scripts/gigatime_flash_testing.ipynb)
+
 ## Environment Setup
 
 We recommend using Conda for environment management. The codebase has been tested with Python 3.11 using A100 GPUs for optimal reproducibility. Before creating the environment, ensure that the `torch` version specified in `environment.yml` matches your GPU and CUDA driver setup.
@@ -76,6 +84,10 @@ model.load_state_dict(state_dict)
 - **Inference Tutorial:** 
 
 Learn how to load the model and run predictions on sample patches: [scripts/gigatime_testing.ipynb](scripts/gigatime_testing.ipynb)
+
+- **⚡ GigaTIME-Flash Inference Tutorial:**
+
+Run inference with the new, efficient [GigaTIME-Flash](https://huggingface.co/prov-gigatime/GigaTIME-flash) model (6× faster, 8× less GPU memory, and higher prediction quality than the original CNN-based GigaTIME): [scripts/gigatime_flash_testing.ipynb](scripts/gigatime_flash_testing.ipynb)
 
 - **Training Tutorial:** 
 
