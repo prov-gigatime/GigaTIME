@@ -50,6 +50,9 @@ This will create a Conda environment named `gigatime`. Activate it with:
 conda activate gigatime
 ```
 
+As a faster alternative, install the same project dependencies with UV; see
+[SETUP_UV.md](SETUP_UV.md) for platform-specific commands and viewer setup.
+
 ## Data 
 
 A set of 50 paired H&E and mIF patches from the test set is available for evaluation. Download the sample data from [Dropbox](https://www.dropbox.com/scl/fi/8ampg43fs2yowt9y6vvr1/sample_test_data.zip?rlkey=bkg4w183qnvkh2dudqy3d8lsg&st=j2l463ug&dl=0).
